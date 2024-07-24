@@ -1,4 +1,4 @@
-#Api Intcomex
+Api Intcomex
 
 Introducción
 Cuenta con los siguientes servicios :
