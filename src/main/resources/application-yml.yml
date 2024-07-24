@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: intcomex-api-test
+    jackson:
+      default-property-inclusion: non-null
+      property-naming-strategy: SNAKE-CASE
+    database:
+      url: jdbc:mysql://localhost:3306/intcomexdb
+      username: root
+      password:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
