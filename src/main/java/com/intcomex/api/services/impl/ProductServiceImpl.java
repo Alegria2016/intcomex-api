@@ -74,15 +74,16 @@ public class ProductServiceImpl  implements ProductService {
         System.out.println("================== CATEGORY ID"+ request.getCategoryId());
         return categoryRepository.findById(request.getCategoryId())
                 .map(category -> {
-                    Product product = new Product();
-                    product.setProductName(request.getProductName());
-                    product.setQuantityPerUnit(request.getQuantityPerUnit());
-                    product.setUnitPrice(request.getUnitPrice());
-                    product.setUnitsInStock(request.getUnitsInStock());
-                    product.setUnitsOnOrder(request.getUnitsOnOrder());
-                    product.setReorderLevel(request.getReorderLevel());
-                    product.setDiscontinued(0);
-                    product.setCategory(category);
+                    Product product = Product.builder()
+                            .productName(request.getProductName())
+                            .quantityPerUnit(request.getQuantityPerUnit())
+                            .unitPrice(request.getUnitPrice())
+                            .unitsInStock(request.getUnitsInStock())
+                            .unitsOnOrder(request.getUnitsOnOrder())
+                            .reorderLevel(request.getReorderLevel())
+                            .discontinued(0)
+                            .category(category)
+                            .build();
 
                     return productRepository.save(product);
 
