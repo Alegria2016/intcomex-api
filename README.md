@@ -7,7 +7,7 @@ entorno Cloud AWS, cuenta con los siguientes servicios:
 
 Crear Categoría ( POST /Category/) 
 
-url de acceso http://3.138.182.70/api/category
+
 
 Body: { 
      "categoryName": "SERVIDORES", 
@@ -17,7 +17,7 @@ Body: {
 
 Crear Producto ( POST /Product/) 
 
-url de acceso http://3.138.182.70/api/products
+
 Body: { 
       "productName": "Yacero TEST", 
       "quantityPerUnit": 2, 
@@ -31,7 +31,7 @@ Body: {
 
 listar productos ( GET /Products/) 
 
-url de acceso http://3.138.182.70/api/products
+
 
 El servicio retorna todos los productos paginados de 10 en 10.
 
@@ -83,7 +83,7 @@ Respuesta {
 
 
 listar productos por ID (GET /Products/id/) url de acceso
-http://3.138.182.70/api/products/2
+
 
 Respuesta: {
         "id": 2,
@@ -104,7 +104,7 @@ Respuesta: {
 
 Instrucciones para despliegue de manera local:
 
-1) Clonar repositorio: https://github.com/Alegria2016/intcomex-api
+
 2) Crear Base de Datos MySql con el nombre : intcomexdb 
   (se denato en el achivo re propiedades al igual que el usuario y contraseña corespondiente  a la BD)
 3) Levantar proyecto en IDE de preferencia Intellij
